@@ -13,7 +13,24 @@
 		9B51E26C1DCE9FE80040BFAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B51E26A1DCE9FE80040BFAA /* Main.storyboard */; };
 		9B51E26E1DCE9FE80040BFAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9B51E26D1DCE9FE80040BFAA /* Assets.xcassets */; };
 		9B51E2711DCE9FE80040BFAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B51E26F1DCE9FE80040BFAA /* LaunchScreen.storyboard */; };
+		9B51E28E1DCEA2160040BFAA /* Foobar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B51E28D1DCEA2160040BFAA /* Foobar.framework */; };
+		9B51E28F1DCEA2160040BFAA /* Foobar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9B51E28D1DCEA2160040BFAA /* Foobar.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CC7F41D48B03AC07E8469962 /* Pods_FabricBug.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A31EBF591523C87A705A6083 /* Pods_FabricBug.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9B51E2901DCEA2160040BFAA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				9B51E28F1DCEA2160040BFAA /* Foobar.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9B51E25E1DCE9FE80040BFAA /* FabricBug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FabricBug.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +43,10 @@
 		9B51E26D1DCE9FE80040BFAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9B51E2701DCE9FE80040BFAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9B51E2721DCE9FE80040BFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B51E28D1DCEA2160040BFAA /* Foobar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Foobar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A31EBF591523C87A705A6083 /* Pods_FabricBug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FabricBug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A80FD262EDABC636732680E0 /* Pods-FabricBug.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricBug.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FabricBug/Pods-FabricBug.debug.xcconfig"; sourceTree = "<group>"; };
+		AB9ACB218287A5495BCCA533 /* Pods-FabricBug.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FabricBug.release.xcconfig"; path = "Pods/Target Support Files/Pods-FabricBug/Pods-FabricBug.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +54,39 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC7F41D48B03AC07E8469962 /* Pods_FabricBug.framework in Frameworks */,
+				9B51E28E1DCEA2160040BFAA /* Foobar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		88AC5F27F27170A84B47159A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B51E28D1DCEA2160040BFAA /* Foobar.framework */,
+				A31EBF591523C87A705A6083 /* Pods_FabricBug.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A57EC60340DC12BE9862CFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A80FD262EDABC636732680E0 /* Pods-FabricBug.debug.xcconfig */,
+				AB9ACB218287A5495BCCA533 /* Pods-FabricBug.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9B51E2551DCE9FE80040BFAA = {
 			isa = PBXGroup;
 			children = (
 				9B51E2601DCE9FE80040BFAA /* FabricBug */,
 				9B51E25F1DCE9FE80040BFAA /* Products */,
+				8A57EC60340DC12BE9862CFC /* Pods */,
+				88AC5F27F27170A84B47159A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,9 +129,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9B51E2751DCE9FE80040BFAA /* Build configuration list for PBXNativeTarget "FabricBug" */;
 			buildPhases = (
+				FEF9759BA8386F771390B084 /* [CP] Check Pods Manifest.lock */,
 				9B51E25A1DCE9FE80040BFAA /* Sources */,
 				9B51E25B1DCE9FE80040BFAA /* Frameworks */,
 				9B51E25C1DCE9FE80040BFAA /* Resources */,
+				0A3F3C110B2C5F3E8999B1BB /* [CP] Embed Pods Frameworks */,
+				52BFAB657A6A10F3A1356F9F /* [CP] Copy Pods Resources */,
+				9B51E2901DCEA2160040BFAA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -146,6 +193,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A3F3C110B2C5F3E8999B1BB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FabricBug/Pods-FabricBug-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52BFAB657A6A10F3A1356F9F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FabricBug/Pods-FabricBug-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEF9759BA8386F771390B084 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9B51E25A1DCE9FE80040BFAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -197,6 +292,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -219,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -245,6 +341,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -261,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -271,6 +368,7 @@
 		};
 		9B51E2761DCE9FE80040BFAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A80FD262EDABC636732680E0 /* Pods-FabricBug.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S8ER3UPD6B;
@@ -283,6 +381,7 @@
 		};
 		9B51E2771DCE9FE80040BFAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB9ACB218287A5495BCCA533 /* Pods-FabricBug.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S8ER3UPD6B;
@@ -312,6 +411,7 @@
 				9B51E2771DCE9FE80040BFAA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

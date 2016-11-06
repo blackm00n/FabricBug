@@ -1,0 +1,366 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001465C39F041BE9933DBEF5 /* Pods_Foobar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9EBD8FBF166D871A9D5CB7A /* Pods_Foobar.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		9B51E2871DCEA1AC0040BFAA /* Foobar.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B51E2851DCEA1AC0040BFAA /* Foobar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B51E2931DCEA23D0040BFAA /* Foo.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B51E2911DCEA23D0040BFAA /* Foo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B51E2941DCEA23D0040BFAA /* Foo.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B51E2921DCEA23D0040BFAA /* Foo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2EE1DDD2FFD783F9A1CFC802 /* Pods-Foobar.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foobar.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Foobar/Pods-Foobar.debug.xcconfig"; sourceTree = "<group>"; };
+		637B5CE7E923ECFFAE61D3C2 /* Pods-Foobar.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foobar.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Foobar/Pods-Foobar.release.xcconfig"; sourceTree = "<group>"; };
+		9B51E2821DCEA1AC0040BFAA /* Foobar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Foobar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B51E2851DCEA1AC0040BFAA /* Foobar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Foobar.h; sourceTree = "<group>"; };
+		9B51E2861DCEA1AC0040BFAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B51E2911DCEA23D0040BFAA /* Foo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Foo.h; sourceTree = "<group>"; };
+		9B51E2921DCEA23D0040BFAA /* Foo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Foo.m; sourceTree = "<group>"; };
+		B9EBD8FBF166D871A9D5CB7A /* Pods_Foobar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foobar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9B51E27E1DCEA1AC0040BFAA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001465C39F041BE9933DBEF5 /* Pods_Foobar.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4ECF3DB3399E952A9A83878A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9EBD8FBF166D871A9D5CB7A /* Pods_Foobar.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9B51E2781DCEA1AC0040BFAA = {
+			isa = PBXGroup;
+			children = (
+				9B51E2841DCEA1AC0040BFAA /* Foobar */,
+				9B51E2831DCEA1AC0040BFAA /* Products */,
+				E8421D876FD1A639AD370026 /* Pods */,
+				4ECF3DB3399E952A9A83878A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		9B51E2831DCEA1AC0040BFAA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9B51E2821DCEA1AC0040BFAA /* Foobar.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9B51E2841DCEA1AC0040BFAA /* Foobar */ = {
+			isa = PBXGroup;
+			children = (
+				9B51E2851DCEA1AC0040BFAA /* Foobar.h */,
+				9B51E2911DCEA23D0040BFAA /* Foo.h */,
+				9B51E2921DCEA23D0040BFAA /* Foo.m */,
+				9B51E2861DCEA1AC0040BFAA /* Info.plist */,
+			);
+			path = Foobar;
+			sourceTree = "<group>";
+		};
+		E8421D876FD1A639AD370026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2EE1DDD2FFD783F9A1CFC802 /* Pods-Foobar.debug.xcconfig */,
+				637B5CE7E923ECFFAE61D3C2 /* Pods-Foobar.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9B51E27F1DCEA1AC0040BFAA /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B51E2871DCEA1AC0040BFAA /* Foobar.h in Headers */,
+				9B51E2931DCEA23D0040BFAA /* Foo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9B51E2811DCEA1AC0040BFAA /* Foobar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9B51E28A1DCEA1AC0040BFAA /* Build configuration list for PBXNativeTarget "Foobar" */;
+			buildPhases = (
+				960D7F92A0FBA764491CBE91 /* [CP] Check Pods Manifest.lock */,
+				9B51E27D1DCEA1AC0040BFAA /* Sources */,
+				9B51E27E1DCEA1AC0040BFAA /* Frameworks */,
+				9B51E27F1DCEA1AC0040BFAA /* Headers */,
+				9B51E2801DCEA1AC0040BFAA /* Resources */,
+				E209556D65FFCB1E816862E2 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Foobar;
+			productName = Foobar;
+			productReference = 9B51E2821DCEA1AC0040BFAA /* Foobar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9B51E2791DCEA1AC0040BFAA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = Transferwise;
+				TargetAttributes = {
+					9B51E2811DCEA1AC0040BFAA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = S8ER3UPD6B;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9B51E27C1DCEA1AC0040BFAA /* Build configuration list for PBXProject "Foobar" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9B51E2781DCEA1AC0040BFAA;
+			productRefGroup = 9B51E2831DCEA1AC0040BFAA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9B51E2811DCEA1AC0040BFAA /* Foobar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9B51E2801DCEA1AC0040BFAA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		960D7F92A0FBA764491CBE91 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		E209556D65FFCB1E816862E2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/../Pods/Target Support Files/Pods-Foobar/Pods-Foobar-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9B51E27D1DCEA1AC0040BFAA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B51E2941DCEA23D0040BFAA /* Foo.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9B51E2881DCEA1AC0040BFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9B51E2891DCEA1AC0040BFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9B51E28B1DCEA1AC0040BFAA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE1DDD2FFD783F9A1CFC802 /* Pods-Foobar.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S8ER3UPD6B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Foobar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.kozhevnikov.Foobar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9B51E28C1DCEA1AC0040BFAA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 637B5CE7E923ECFFAE61D3C2 /* Pods-Foobar.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = S8ER3UPD6B;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Foobar/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = tech.kozhevnikov.Foobar;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9B51E27C1DCEA1AC0040BFAA /* Build configuration list for PBXProject "Foobar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B51E2881DCEA1AC0040BFAA /* Debug */,
+				9B51E2891DCEA1AC0040BFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9B51E28A1DCEA1AC0040BFAA /* Build configuration list for PBXNativeTarget "Foobar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9B51E28B1DCEA1AC0040BFAA /* Debug */,
+				9B51E28C1DCEA1AC0040BFAA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9B51E2791DCEA1AC0040BFAA /* Project object */;
+}

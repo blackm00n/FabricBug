@@ -1,0 +1,6 @@
+framework module Pods_FabricBug {
+  umbrella header "Pods-FabricBug-umbrella.h"
+
+  export *
+  module * { export * }
+}
